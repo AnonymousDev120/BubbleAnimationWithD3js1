@@ -1,0 +1,58 @@
+.ConceptBubbles2 {
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  z-index: 200;
+}
+.ConceptMap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.bubbles > circle {
+  outline: 1px solid #9665c4;
+  border-radius: 50%;
+  transition: fill 0.5s;
+}
+.bubbles > text {
+  cursor: pointer;
+  user-select: none;
+}
+.bubbles {
+  cursor: pointer;
+}
+
+.bubbles:hover > circle {
+  outline: 1px solid #fff;
+  fill: #1678c8 !important;
+  transition: all 0.5s;
+}
+.bubbles:hover > .circle1 {
+  outline: 8px solid #1678c883;
+}
+.bubbles:hover > .circle2 {
+  outline: 15px solid #1678c84b;
+}
+.bubbles:hover > .circle3 {
+  outline: 20px solid #1678c81f;
+}
+.circle3,
+.circle1,
+.circle2 {
+  transition: outline 0.2s;
+}
+.centerBubble {
+  outline: 2px solid white !important;
+}
+.panel {
+  z-index: 10;
+}
+.node__title {
+  transform: translate(0, -8px);
+  fill: black;
+  font-family: sans-serif;
+  /* font-weight: lighter !important; */
+}
